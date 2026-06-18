@@ -30,12 +30,12 @@ jobs:
         go-version-file: 'go.mod'
         cache: false
     - name: Run GoReleaser
-      uses: goreleaser/goreleaser-action@1a80836c5c9d9e5755a25cb59ec6f45a3b5f41a8 # v7.2.1
+      uses: chainguard-actions/goreleaser-goreleaser-action@7c64773cc04d3281910fe0c87f70511960b2f971 # v7.2.2
       with:
         version: v2.7.0
         args: release --release-notes tools/release/release-note.md
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - uses: actions/attest@59d89421af93a897026c735860bf21b6eb4f7b26 # v4.1.0
+    - uses: chainguard-actions/actions-attest@324c8ca920a3aff57b0a5a23bbdadbd6f117ad99 # v4.1.0
       with:
         subject-path: 'dist/checksums.txt'
