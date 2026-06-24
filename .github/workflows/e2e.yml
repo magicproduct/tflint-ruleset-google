@@ -23,7 +23,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [gh-8cpu-runner-mles, windows-latest]
         version: [v0.46.0, latest]
     env:
       TFLINT_VERSION: ${{ matrix.version }}
