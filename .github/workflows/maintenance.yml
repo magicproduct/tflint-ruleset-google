@@ -32,7 +32,7 @@ jobs:
           make tflint
         env:
           OUTPUT_PATH: ${{ github.workspace }}/rules/magicmodules
-      - uses: chainguard-actions/peter-evans-create-pull-request@c6efddbd7b21d74b840d2bb96b268ec895894b4b # v8.1.1
+      - uses: step-security/create-pull-request@50c103da2b9ca12cd5bc013fc6931051a5aa872b # v8.1.1
         with:
           commit-message: |
             Update Magic Modules

@@ -29,7 +29,7 @@ jobs:
         go-version-file: 'go.mod'
         cache: false
     - name: Run GoReleaser
-      uses: chainguard-actions/goreleaser-goreleaser-action@7c64773cc04d3281910fe0c87f70511960b2f971 # v7.2.2
+      uses: step-security/goreleaser-action@aee981bee303ff102e9a607e46c6a6ace9201398 # v7.2.2
       with:
         version: v2.7.0
         args: check
