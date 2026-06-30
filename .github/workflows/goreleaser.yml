@@ -29,7 +29,7 @@ jobs:
         go-version-file: 'go.mod'
         cache: false
     - name: Run GoReleaser
-      uses: goreleaser/goreleaser-action@1a80836c5c9d9e5755a25cb59ec6f45a3b5f41a8 # v7.2.1
+      uses: step-security/goreleaser-action@aee981bee303ff102e9a607e46c6a6ace9201398 # v7.2.2
       with:
         version: v2.7.0
         args: check
