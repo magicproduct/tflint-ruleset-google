@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   dependabot:
-    runs-on: gh-4cpu-runner-mles
+    runs-on: ubuntu-latest
     if: github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
       - name: Enable auto-merge for Dependabot PRs
